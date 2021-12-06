@@ -1,0 +1,69 @@
+body {
+    background-image: url('flight.jpg'); /* Source: iStockPhoto */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+    padding: 10px;
+}
+
+.operational-status-wrapper {
+    border: 1px solid white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.operational-status {
+    padding: 10px;
+}
+
+.authorize-contract-div {
+    border: 1px solid white;
+    background-color: darkred;
+    padding: 10px;
+    flex: 50%;
+}
+
+.airline-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.register-airline-wrapper {
+    border: 1px solid white;
+    background-color: darkgreen; 
+    flex: 50%;
+    padding: 10px;
+}
+/*.register-flight-wrapper {*/
+/*    border: 1px solid white;*/
+/*    background-color: darkgreen;*/
+/*    flex: 50%;*/
+/*    padding: 10px;*/
+/*}*/
+/*.fund-airline-wrapper {*/
+/*    border: 1px solid white;*/
+/*    background-color: darkgreen; */
+/*    flex: 50%;*/
+/*    padding: 10px;*/
+/*}*/
+
+h5 {
+    color: #999999;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+input.address {
+    min-width: 85%;
+    font-size: large;
+    margin-bottom: 5px;
+}

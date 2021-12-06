@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <main class="container"> 
+        <h1>Flight Surety</h1>
+        <div class="operational-status-wrapper">
+            <div class="text-primary" id="operational-status"></div>
+            <div class="text-center">
+                <btn class="btn btn-primary" id="refresh-status">Refresh Status</btn>
+            </div>
+        </div>
+
+        <div class="airline-row">
+            <div class="authorize-contract-div text-center">
+                <h3>Toggle Operational Status</h3>
+                <btn class="btn btn-primary" id="set-status-false">Disable Contract</btn>
+                <btn class="btn btn-primary" id="set-status-true">Enable Contract</btn>
+                <p class="text-warning">* Must be contract owner</p>
+            </div>
+            <div class="authorize-contract-div text-center">
+                <h3>Add/Remove Contract Address from Authorized Caller List</h3>
+                <input class="address" id='contract-address' placeholder='Contract Address' />
+                <btn class="btn btn-primary" id="register-contract-address">Add to Authorized Caller</btn>
+                <btn class="btn btn-primary" id="unregister-contract-address">Remove Authorized Caller</btn>
+                <p class="text-warning">* Error</p>
+            </div>
+        </div>
+
+        <div class="airline-row">
+            <div class="register-airline-wrapper text-center">
+                <h3>Fund My Airline</h3>
+                <btn class="btn btn-primary" id="fund-airline">Fund Insurance</btn>
+                <p class="text-warning">* Error</p>
+            </div>
+            <div class="register-airline-wrapper text-center">
+                <h3>Register Airline</h3>
+                <input class="address" id='register-airline-address' placeholder='Airline Address' />
+                <btn class="btn btn-primary" id="register-airline">Register Airline</btn>
+                <p class="text-warning">* Error</p>
+            </div>
+            <div class="register-airline-wrapper text-center">
+                <h3>Register Flight</h3>
+                <p>
+                    <label for="register-flight-name">Flight Name: </label>
+                    <input id="register-flight-name" placeholder="Flight Name" />
+                </p>
+                <p>
+                    <label for="register-flight-date">Flight Date: </label>
+                    <input id="register-flight-date" type="date" />
+                </p>
+                <p>
+                    <label for="register-flight-time">Flight Time: </label>
+                    <input id="register-flight-time" type="time" />
+                </p>
+                <btn class="btn btn-primary" id="register-flight">Register Flight</btn>
+                <p class="text-warning">* Must be a fully funded</p>
+            </div>
+            <div class="register-airline-wrapper text-center">
+                <h3>Purchase Flight Insurance</h3>
+                <select id="current-flight-select">
+
+                </select>
+                <br />
+                <btn class="btn btn-primary" id="purchase-flight-insurance">Purchase Flight Insurance</btn>
+                <p class="text-warning">* Insurance costs 1 ether.</p>
+                <btn class="btn btn-primary" id="send-to-oracles">Send to Oracles</btn><br /><br />
+                <btn class="btn btn-primary" id="collect-funds">Collect Funds</btn>
+            </div>
+        </div>
+
+        <div class="log-row">
+            <div class="log-wrapper">
+                <h3>Transaction History</h3>
+                <ul class="log-ul" id='log-ul'></ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
