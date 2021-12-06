@@ -50,3 +50,6 @@ This FlightSurety smart contract performs the following tasks:
 5. Passengers pay for insurance and receive 1.5 x if flight is late
 6. After first 4 airlines are added, additional airlines must be voted upon by the first 4
 
+## 7. Here are what the unit tests should look like
+
+![truffle test](images/UnitTests.PNG)
